@@ -1,0 +1,574 @@
+:root {
+	--azul: #0a1dca;
+	--fondo: #03020c;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(3,2,12);
+	font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor {
+	width: 90%;
+	margin: auto;
+}
+
+.navbar {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	position: sticky;
+	top: 0;
+  }
+  
+  .navbar-container {
+	display: flex;
+	align-items: center;
+	padding: 0 50px;
+	height: 100%;
+	color: white;
+	font-family: "Sen", sans-serif;
+  }
+  
+  .logo-container {
+	flex: 4;
+	margin-top: 0;
+  }
+  
+  .logo {
+	font-size: 30px;
+	color: var(--azul);
+	cursor: pointer;
+	text-decoration: none;
+  }
+  
+  .menu-container {
+	flex: 6;
+	cursor: pointer;
+  }
+  
+  .menu-list {
+	display: flex;
+	list-style: none;
+  }
+
+  .menu-list a {
+	text-decoration: none;
+	color: #fff;
+  }
+  
+  .menu-list a:hover {
+	color: #777777;
+	transition: 0.2s;
+  }
+
+  .menu-list-item {
+	margin-right: 30px;
+  }
+  
+  .menu-list-item.active {
+	font-weight: lighter;
+  }
+
+  .activo {
+	font-weight: bold;
+  }
+
+  .profile-container {
+	flex: 2;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+	cursor: pointer;
+  }
+  
+  .profile-text-container {
+	margin: 0 20px;
+  }
+  
+  .profile-picture {
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	object-fit: cover;
+  }
+
+header {
+	padding: 30px 0;
+	z-index: 200;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 0.45rem 2rem 0.45rem 1.27rem;
+	border-bottom: 1px solid var(--fondo);
+	position: fixed;
+	background-color: var(--fondo);
+	top: 0;
+	left: 0;
+}
+
+header.left {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	gap: 1.4rem;
+}
+
+header .contenedor {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-left: 0;
+}
+
+header .logotipo {
+	font-family: 'Bebas Neue', cursive;
+	font-weight: normal;
+	color: var(--azul);
+	font-size: 40px;
+	cursor: pointer;
+	text-decoration: none;
+}
+
+header nav a {
+	color: #AAA;
+	text-decoration: none;
+	margin-right: 20px;
+	font-size: 15px;
+}
+
+header nav a:hover {
+	color: #777777;
+	transition: 0.2s;
+}
+
+header nav a.activo {
+	font-weight: bold;
+	color: #0a1dca;
+}
+
+.pelicula-principal {
+	font-size: 16px;
+	min-height: 41.62em;
+	color: #fff;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.2), #03020c), url(/imagenes/Interstellar.jpg);
+	position: relative;;
+	margin-top: 0%;
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	background-position: center end;
+	background-size: cover;
+	max-width: fit-content;
+}
+
+.pelicula-principal2 {
+	font-size: 16px;
+	min-height: 41.62em;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.4);
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.2), #03020c), url(/imagenes/furiosa-fondo.jpg);
+	background-position: center center;
+	background-size: cover;
+	max-width: fit-content;
+}
+
+.pelicula-principal3 {
+	font-size: 16px;
+	min-height: 41.62em;
+	color: #fff;
+	background: rgba(0, 0, 0, 0.4);
+	margin-bottom: 3.12em;
+	display: flex;
+	align-items: end;
+	background: linear-gradient(to bottom, rgba(0,0,0,0.4), #03020c), url(/imagenes/leydelosaudaces.jpg);
+	background-position: center end;
+	background-size: cover;
+}
+
+.pelicula-principal .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	margin-left: 70px;
+}
+
+.pelicula-principal .titulo-principal {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal .boton {
+	background: var(--fondo);
+	border: none;
+	border-radius: 1em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal .boton i {
+	margin-right: 1.25em;
+}
+
+.pelicula-principal2 .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	margin-left: 70px;
+}
+
+.pelicula-principal2 .titulo-principal {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal2 .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal2 .boton {
+	background: var(--fondo);
+	border: none;
+	border-radius: 1em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal2 .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal2 .boton i {
+	margin-right: 1.25em;
+}
+
+.pelicula-principal3 .contenedor {
+	margin: 0 auto;
+	margin-bottom: 6.25em;
+	margin-left: 70px;
+}
+
+.pelicula-principal3 .titulo-principal {
+	font-weight: 600;
+	font-size: 3.12em;
+	margin-bottom: 0.4em;
+}
+
+.pelicula-principal3 .descripcion {
+	font-weight: normal;
+	font-size: 1em;
+	line-height: 1.75em;
+	max-width: 50%;
+	margin-bottom: 1.25em;
+}
+
+.pelicula-principal3 .boton {
+	background: var(--fondo);
+	border: none;
+	border-radius: 1em;
+	padding: 0.93em 1.87em;
+	color: #fff;
+	margin-right: 1.25em;
+	cursor: pointer;
+	transition: .3s ease all;
+	font-size: 1.12em;
+}
+
+.pelicula-principal3 .boton:hover {
+	background: #fff;
+	color: #000;
+}
+
+.pelicula-principal3 .boton i {
+	margin-right: 1.25em;
+}
+
+.peliculas-destacadas {
+	font-size: 16px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	margin-top: 10px;
+	justify-content: center;
+}
+
+.titulo-pd {
+	font-size: 1.5em;
+    color: white;
+    width: 100%;
+	text-align: center;
+	font-weight: bold;
+}
+
+.categorias-peliculas {
+	font-size: 1.2em;
+    color: white;
+    width: 100%;
+	text-align: left;
+	margin-left: 2rem;
+}
+
+.titulo-peliculas {
+	margin-top: 80px;
+	text-align:left;
+	margin-left: 135px;
+	font-size: 2rem;
+	color: #fff;
+	font-weight: bold;
+}
+
+.peliculas-fondo {
+	background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Ftwitter.com%2FKamalOfcl%2Fstatus%2F1793973449083555847&psig=AOvVaw0xJUSS_QG9FO4tWMo-xItp&ust=1733338554678000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCNi1xLmjjIoDFQAAAAAdAAAAABAK);
+	position: absolute;
+	align-items: center;
+	margin-left: 90px;
+}
+
+.contenedor-destacadas  {
+	margin-top: 5px;
+	display: flex;
+	align-items: center;
+	align-content: center;
+	flex-wrap: nowrap;
+	gap: 5px;
+}
+
+.imagen-pd {
+	width: 15rem;
+	border-radius: 5%;
+	cursor: pointer;
+}
+
+.imagen-pd:hover {
+	width: 17rem;
+	transition: 0.3s;
+	transition-delay: 0.5s;
+}
+
+.carrusel {
+    display: grid;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+	justify-content: center;
+}
+
+.carrusel-contenedor {
+    position: relative;
+    width: 100vw;
+	height: 100%;
+    max-width: 1500px;
+    overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.carrusel-items {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrusel-item {
+    min-width: 50%;
+    position: relative;
+}
+
+.carrusel-item img {
+    width: 100%;
+	height: 100%;
+    display: block;
+	object-fit: cover;
+}
+
+.carrusel-item .overlay {
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+	right: 0%;
+	top:0%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 25%;
+    display: none;
+	text-align: center;
+}
+
+#boton {
+	background: var(--fondo);
+	border: none;
+	border-radius: 0.5em;
+	padding: 0.70em 1.15em;
+	color: #fff;
+	margin-right: 0.5em;
+	cursor: pointer;
+	transition: .4s ease all;
+	font-size: 1em;
+}
+
+#boton:hover {
+	background: #fff;
+	color: #000;
+	font-weight: bold;
+	transition-delay: 0.3s;
+}
+
+.botones {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: center;
+}
+
+.carrusel-item:hover .overlay {
+    display: block;
+}
+
+.carrusel-boton {
+    position: absolute;
+    top: 50%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.carrusel-boton.prev {
+    left: 10px;
+}
+
+.carrusel-boton.next {
+    right: 10px;
+}
+
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.grid-container img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+#mi-lista-contenedor {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columnas */
+    gap: 15px;
+    padding: 20px;
+    justify-items: center;
+    margin-top: 20px;
+}
+
+#mi-lista-contenedor img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+#mi-lista-contenedor img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+/* Encabezado principal */
+main h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.footer {
+    background-color: var(--fondo);
+    color: white;
+    padding: 3rem 0;
+    margin-top: 3rem;
+	font-family: 'Open sans';
+	text-decoration: none;
+}
+
+.contenido-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 0 1rem;
+	justify-content: center;
+	text-align: center;
+}
+
+.contenido-footer h3 {
+    color: var(--azul);
+    margin-bottom: 1rem;
+}
+
+.contenido-footer p {
+    color: white;
+}
+
+.contenido-footer a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.contenido-footer a:hover {
+	text-decoration:underline;
+}
+
+.info-final {
+	font-size: 0.5rem;
+	font-style: italic;
+	font-weight: lighter;
+	text-align: center;
+	color: #ffffff;
+}
+
+.seccion-footer {
+	text-decoration: none;
+}
